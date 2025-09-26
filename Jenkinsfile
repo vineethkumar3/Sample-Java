@@ -12,11 +12,7 @@ pipeline {
                 cleanWs()
             }
         }
-        stage('CheckOut') {
-            steps{
-                git url: 'https://github.com/vineethkumar3/Sample-Java.git', branch: params.Branch
-            }
-        }
+
         stage('Build') {
             steps {
               sh 'pwd'
