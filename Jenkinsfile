@@ -3,7 +3,7 @@ pipeline {
         label 'worker'
     }
     tools {
-        maven 'maven_3.9.11'
+        maven 'maven'
     }
     environment {
         DOCKER_IMAGE = 'Myimage'
